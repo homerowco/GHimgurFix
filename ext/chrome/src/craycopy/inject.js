@@ -1,12 +1,14 @@
 (function() {
-	for( e of document.querySelectorAll( 'img[src*="//i.imgur.com"]' ) ) {
-		if( e.src.indexOf('craycopy') === -1 ) {
-			e.src = 'https://craycopy.com/i/'+e.src;
+	var f = '://i.imgur.com/',
+		r = 'https://craycopy.com/';
+	for( e of document.querySelectorAll( 'img.bbc_img[src*="'+f+'"]' ) ) {
+		if( e.src.indexOf(r) === -1 ) {
+			e.src = r+'i/'+e.src;
 		}
 	}
-	for( e of document.querySelectorAll( 'a[href*="//i.imgur.com"]' ) ) {
-		if( e.href.indexOf('craycopy') === -1 ) {
-			e.href = 'https://craycopy.com/i/'+e.href;
+	for( e of document.querySelectorAll( 'a.highslide[href*="'+f+'"]' ) ) {
+		if( e.href.indexOf(r) === -1 ) {
+			e.href = r+'i/'+e.href;
 		}
 	}
 })();
