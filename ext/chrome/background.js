@@ -1,9 +1,10 @@
 chrome.webRequest.onBeforeSendHeaders.addListener(
 	function( e ) {
-		if( e.initiator.indexOf( 'geekhack.org' ) !== -1 ) {
+		var init = e.initiator || e.documentUrl;
+		if( init.indexOf( 'geekhack.org' ) !== -1 ) {
 			e.requestHeaders.forEach( function( header ) {
-				if( header.name.toLowerCase() == "referer" ) {
-					header.value = 'https://imgur.com/';
+				if( header.name.toLowerCase() === "referer" ) {
+					header.value = 'https://i.imgur.com/';
 				}
 			});
 		}
