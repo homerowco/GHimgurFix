@@ -1,14 +1,17 @@
 {
   "name": "GH Imgur Fix",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "manifest_version": 2,
   "description": "GH imgur fixer via craycopy.com by Keebs - Homerow Co.",
-  "homepage_url": "https://craycopy.com/",
-  "content_scripts" : [{
-      "matches" : [ "https://geekhack.org/*"],
-      "js" : ["inject.js"]
-  }],
+  "homepage_url": "https://geekhack.org/",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
   "permissions": [
-    "*://*.geekhack.org/*"
+    "*://*.geekhack.org/*",
+    "*://*.imgur.com/*",
+    "webRequest",
+    "webRequestBlocking"
   ]
 }
