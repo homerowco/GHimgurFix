@@ -7,7 +7,7 @@
 	<key>Builder Version</key>
 	<string>13605.2.8</string>
 	<key>CFBundleDisplayName</key>
-	<string>craycopy</string>
+	<string>GHimgurFix</string>
 	<key>CFBundleIdentifier</key>
 	<string>co.homerow.craycopy</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -32,7 +32,7 @@
 		</dict>
 	</dict>
 	<key>DeveloperIdentifier</key>
-	<string>0000000000</string>
+	<string>W39E78275W</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
